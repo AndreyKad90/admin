@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AndreyKad90/admin/issues"
   },
-  "homepage": "https://github.com/AndreyKad90/admin#readme"
+  "homepage": "https://github.com/AndreyKad90/admin#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
