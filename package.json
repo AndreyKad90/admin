@@ -1,0 +1,19 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "The admin module of the system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyKad90/admin.git"
+  },
+  "author": "Kadyrov Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyKad90/admin/issues"
+  },
+  "homepage": "https://github.com/AndreyKad90/admin#readme"
+}
