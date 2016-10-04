@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 
     database: {
         username: "productionUser",
@@ -9,4 +9,4 @@ export default {
 
     port: 3000
 
-}
+};

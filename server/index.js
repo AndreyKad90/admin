@@ -8,5 +8,5 @@ app.use(express.static('client'));
 require('./routes')(app);
 
 app.listen(config.port, () => {
-    console.log(`Application has started and is listening on the ${config.port} port`)
+    console.log(`Application has started and is listening on the ${config.port} port`);
 });
