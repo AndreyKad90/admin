@@ -1,9 +1,12 @@
+import credentials from '../../../credentials.json';
+
+var dbUsername = credentials.database.username;
+var dbPassword = credentials.database.password;
+
 module.exports =  {
 
     database: {
-        username: "test",
-        password: "test",
-        url: 'test',
+        url: `mongodb://${dbUsername}:${dbPassword}@ds035046.mlab.com:35046/internet-shop`,
         config: {}
     },
 
