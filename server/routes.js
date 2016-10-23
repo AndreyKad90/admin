@@ -1,7 +1,6 @@
 module.exports = function(app) {
 
-    app.get("/test", (req, res, next) => {
-        res.json("Hello world !");
-    });
+    app.use('/api/authentication', require('./api/authentication'));
+    app.use('/api/users', require('./api/users'));
 
 };

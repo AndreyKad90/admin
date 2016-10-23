@@ -5,6 +5,36 @@
     <title></title>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <h1>Login form</h1>
+    login : <input id="login" type="text" name="login"/>
+    <br />
+    password : <input id="password" type="password" name="password"/>
+    <button id="loginButton">Submit</button>
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            var login = document.getElementById("login").value;
+            var password = document.getElementById("password").value;
+
+            var data = {
+                login: login,
+                password: password
+            };
+
+            if (!login || !password) {
+                alert("Fill out the field!");
+            } else {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        alert(this.responseText);
+                    }
+                };
+                xhttp.open("POST", "/api/authentication/login", true);
+                xhttp.setRequestHeader("Content-type", "application/json");
+                xhttp.send(JSON.stringify(data));
+            }
+        });
+
+    </script>
 </body>
 </html>
